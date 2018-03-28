@@ -1,0 +1,15 @@
+ <body>
+ <div>
+            <a href="/">Home</a> | 
+            <a href="/upload-file">upload file to dropbox</a> | 
+            <a href="/downloadfile">download form</a>
+			<a href="/deletefile">delete a file</a>
+        </div> 
+<br></br>
+<strong>List of dropbox file names</strong>
+<ul>
+  <% lists.names.forEach(function(msgObj){ %>
+    <li><%= msgObj.name %></li>
+  <% }) %>
+</ul>
+ 
